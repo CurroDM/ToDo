@@ -91,6 +91,7 @@ form button:hover {
   padding: 1rem;
   border-radius: .3125rem;
   letter-spacing: 1.5px;
+  background-color: white;
 }
 .todo li {
   flex: 1;
@@ -151,6 +152,7 @@ select {
 .select::after {
   content: "\25BC";
   position: absolute;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
