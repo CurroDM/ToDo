@@ -21,10 +21,12 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
     };
     return (
         <form>
-            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
-            <button onClick={submitTodoHandle} className="todo-button" type="submit">
-                <i className="fas fa-plus-square"></i>
-            </button>
+            <div className="todo-flex">
+                <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
+                <button onClick={submitTodoHandle} className="todo-button" type="submit">
+                    <i className="fa fa-plus"></i>
+                </button>
+            </div>
             <div className="select">
                 <select onChange={statusHandler} name="todos" className="filter-todo">
                     <option value="all">All</option>

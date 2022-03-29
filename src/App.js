@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 
 //impots Components
 import Form from './components/Form';
@@ -51,14 +50,14 @@ function App() {
     <div className="App">
       <header>
         <h1>Lista para ver</h1>
-      </header>
-      <Form
+        <Form
         inputText={inputText}
         todos={todos}
         setTodos={setTodos}
         setInputText={setInputText}
         setStatus={setStatus}
       />
+      </header>
       <TodoList
         setTodos={setTodos}
         todos={todos}
